@@ -559,6 +559,61 @@ footer a:hover { text-decoration: underline; }
 
 .project-desc p:last-child { margin-bottom: 0; }
 
+/* ── Lightbox ────────────────────────────────── */
+.screenshot-item img,
+.code-item img {
+  cursor: zoom-in;
+}
+
+#lightbox-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.88);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity .25s;
+}
+
+#lightbox-overlay.active {
+  display: flex;
+  opacity: 1;
+}
+
+#lightbox-img {
+  max-width: 92vw;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 20px 60px rgba(0,0,0,.6);
+  cursor: default;
+}
+
+#lightbox-close {
+  position: fixed;
+  top: 1.25rem;
+  right: 1.5rem;
+  background: rgba(255,255,255,.15);
+  border: none;
+  color: var(--white);
+  font-size: 1.8rem;
+  line-height: 1;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background .18s;
+}
+
+#lightbox-close:hover {
+  background: rgba(255,255,255,.3);
+}
+
 /* ── Utility ─────────────────────────────────── */
 .mt-3 { margin-top: 3rem; }
 .mb-2 { margin-bottom: 2rem; }
