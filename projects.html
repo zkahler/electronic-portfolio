@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects – Zach Kahler</title>
+  <title>Advanced Projects – Zach Kahler</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -44,40 +44,124 @@
 
   <!-- ── Main Content ── -->
   <main>
-    <h2 class="section-title">Featured Projects</h2>
-    <p class="section-subtitle">
-      Select a project below to view its description, screen captures, and sample code.
-    </p>
 
-    <div class="card-grid">
+    <!-- ── Custom Cricket ── -->
+    <h2 class="section-title">Custom Cricket</h2>
+    <p class="section-subtitle">CIS 293 &ndash; Advanced Technologies</p>
 
-      <!-- Project 1 – placeholder, replace with your actual project -->
-      <div class="project-card">
-        <div class="project-card-header">
-          <h3>Project Title</h3>
-          <p>Course &bull; Semester / Year</p>
-        </div>
-        <div class="project-card-body">
-          <p>
-            Brief description of the project, its purpose, the technologies used, and any notable features or outcomes.
-            Replace this text and the link below with your actual project details.
-          </p>
-          <div class="chip-list">
-            <span class="chip">Technology</span>
-            <span class="chip">Technology</span>
-          </div>
-          <a class="btn" href="#">View Documentation</a>
-        </div>
+    <div class="project-desc">
+      <p>
+        Custom Cricket is a cross-platform darts scoring app built with Dart and Flutter. It started as a
+        joke — "what if we used ALL the numbers?" — after learning the traditional Cricket dart game,
+        which only uses numbers 15–20 and the bullseye. The app lets players fully customize which
+        numbers are in play, supports up to four players, and tracks scores dynamically across turns.
+      </p>
+      <p>
+        The app features a player setup screen, a number selection screen (evens, odds, all, or custom),
+        a live game screen with per-player scorecards, and a custom-painted dartboard visualization that
+        highlights the active number. Game state is managed through a <code>CricketGame</code> model
+        class with full move history support.
+      </p>
+      <div class="chip-list">
+        <span class="chip">Dart</span>
+        <span class="chip">Flutter</span>
+        <span class="chip">Material Design 3</span>
+        <span class="chip">Custom Painter</span>
+        <span class="chip">State Management</span>
+        <span class="chip">Cross-Platform</span>
       </div>
+      <a class="btn" href="images/customcricket/CustomCricketPresentationPP.pdf" target="_blank">View Full Presentation (PDF)</a>
+    </div>
 
-      <!-- Add additional project cards here -->
+    <!-- App Screenshots from the presentation -->
+    <div class="mt-3">
+      <h3 class="section-title">Application Highlights</h3>
+      <p class="section-subtitle">Key screens and code from the project presentation</p>
 
+      <div class="screenshot-grid">
+
+        <div class="screenshot-item">
+          <img src="images/customcricket/player-setup-screen.png" alt="Player Setup Screen" />
+          <div class="screenshot-caption">
+            Player Setup Screen
+            <p>Users enter names for up to four players before proceeding to number selection.</p>
+          </div>
+        </div>
+
+        <div class="screenshot-item">
+          <img src="images/customcricket/number-selection-screen.png" alt="Number Selection Screen" />
+          <div class="screenshot-caption">
+            Number Selection Screen
+            <p>Players choose which numbers to include — evens, odds, all, or a custom selection.</p>
+          </div>
+        </div>
+
+        <div class="screenshot-item">
+          <img src="images/customcricket/game-screen.png" alt="Game Screen" />
+          <div class="screenshot-caption">
+            Game Screen &amp; Gameplay
+            <p>Live scorecards per player, current turn indicator, and interactive dartboard grid.</p>
+          </div>
+        </div>
+
+        <div class="screenshot-item">
+          <img src="images/customcricket/darboard-visualization.png" alt="Dartboard Visualization" />
+          <div class="screenshot-caption">
+            Dartboard Visualization
+            <p>Custom painter draws a dartboard highlighting the selected number in green.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Code highlights -->
+    <div class="mt-3">
+      <h3 class="section-title">Sample Code</h3>
+      <p class="section-subtitle">Key sections from the Dart/Flutter codebase</p>
+
+      <div class="code-grid">
+
+        <div class="code-item">
+          <img src="images/customcricket/code-appentry.png" alt="App Entry and Main Widget" />
+          <div class="code-caption">
+            <strong>App Entry &amp; Main Widget</strong>
+            <p>Initializes the Flutter app with Material Design 3 and green color scheme, routing to <code>DartsCricketScreen</code>.</p>
+          </div>
+        </div>
+
+        <div class="code-item">
+          <img src="images/customcricket/code-gamelogic.png" alt="Game Logic Models" />
+          <div class="code-caption">
+            <strong>Game Logic — CricketGame Model</strong>
+            <p><code>CricketGame</code> class manages players, current turn, move history, and number state across the full game session.</p>
+          </div>
+        </div>
+
+        <div class="code-item">
+          <img src="images/customcricket/code-numberselection.png" alt="Number Selection Logic" />
+          <div class="code-caption">
+            <strong>Number Selection Screen</strong>
+            <p>Builds a grid of all dart numbers with toggle selection and preset filters for evens, odds, and all numbers.</p>
+          </div>
+        </div>
+
+        <div class="code-item">
+          <img src="images/customcricket/code-customdartboardpainter.png" alt="Custom Dartboard Painter" />
+          <div class="code-caption">
+            <strong>Custom Dartboard Painter</strong>
+            <p>Uses Flutter's <code>CustomPainter</code> to render a dartboard and highlight the active number dynamically.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
 
     <div class="bio-block mt-3">
       <p>
-        <strong>Note:</strong> Project documentation, screen captures, and sample code will be uploaded here.
-        Check back soon for full project details.
+        <strong>Full presentation available:</strong> The project presentation PDF walks through each section
+        of the codebase with slide-by-slide explanations and embedded screenshots of the running app.
+        <a href="images/customcricket/CustomCricketPresentationPP.pdf" target="_blank" style="color:var(--green-accent);font-weight:600;">Open Presentation &rarr;</a>
       </p>
     </div>
 
