@@ -365,6 +365,18 @@ main {
   vertical-align: middle;
 }
 
+.badge-upcoming {
+  display: inline-block;
+  padding: .15rem .55rem;
+  background: var(--gray-600);
+  color: var(--white);
+  border-radius: 50px;
+  font-size: .7rem;
+  font-weight: 600;
+  margin-left: .5rem;
+  vertical-align: middle;
+}
+
 /* ── Projects Page ───────────────────────────── */
 .project-card {
   background: var(--white);
