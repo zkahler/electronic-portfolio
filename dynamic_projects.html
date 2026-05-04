@@ -11,8 +11,8 @@
   <!-- ── Hero ── -->
   <header class="hero">
     <h1>Dynamic Projects</h1>
-    <p class="subtitle">CIS 241 &ndash; Dynamic Web Site Development &bull; Southeast Technical Institute</p>
-    <div class="hero-badge">PHP &bull; MySQL &bull; AJAX</div>
+    <p class="subtitle">CIS 241 &ndash; Dynamic Website Development &bull; Southeast Technical Institute</p>
+    <div class="hero-badge">PHP &bull; MySQL &bull; MVC</div>
   </header>
 
   <!-- ── Navigation ── -->
@@ -44,45 +44,67 @@
 
   <!-- ── Main Content ── -->
   <main>
-    <h2 class="section-title">CIS 241 – Dynamic Web Projects</h2>
-    <p class="section-subtitle">
-      PHP/MySQL dynamic web applications with working live demos. At least one sample demonstrates
-      actual working database-driven PHP/MySQL code.
-    </p>
 
-    <div class="card-grid">
+    <!-- ── The Green Meeple ── -->
+    <h2 class="section-title">The Green Meeple</h2>
+    <p class="section-subtitle">CIS 241 &ndash; Dynamic Website Development</p>
 
-      <!-- Dynamic Project 1 – placeholder with live demo -->
-      <div class="project-card">
-        <div class="project-card-header">
-          <h3>Dynamic Project Title</h3>
-          <p>CIS 241 &bull; Semester / Year</p>
-        </div>
-        <div class="project-card-body">
-          <p>
-            Brief description of the dynamic project. Explain the database schema, PHP backend logic,
-            and any front-end JavaScript/AJAX features. Replace this placeholder with actual details.
-          </p>
-          <div class="chip-list">
-            <span class="chip">PHP</span>
-            <span class="chip">MySQL</span>
-            <span class="chip">HTML/CSS</span>
-            <span class="chip">JavaScript</span>
-          </div>
-          <a class="btn" href="#">Live Demo</a>
-          <a class="btn btn-outline" href="#">Documentation</a>
-        </div>
+    <div class="project-desc">
+      <p>
+        The Green Meeple is a full-stack board game management web application built with PHP and MySQL.
+        Users can browse a catalog of over 70 board games, add new titles, edit existing entries, and
+        manage a shopping cart — all backed by a live MySQL database.
+      </p>
+      <p>
+        The app is structured around the MVC pattern with a PDO database layer, a controller handling
+        all CRUD operations, and separate view templates for each page. It also includes a user
+        registration and login system with password hashing, a filter and search interface, and a
+        persistent cart stored in session state.
+      </p>
+      <div class="chip-list">
+        <span class="chip">PHP</span>
+        <span class="chip">MySQL</span>
+        <span class="chip">PDO</span>
+        <span class="chip">MVC Architecture</span>
+        <span class="chip">User Authentication</span>
+        <span class="chip">Session State</span>
+        <span class="chip">HTML/CSS</span>
       </div>
-
-      <!-- Add additional dynamic project cards here -->
-
+      <a class="btn" href="https://zkahler.infinityfree.me/" target="_blank">Live Demo</a>
     </div>
 
-    <div class="bio-block mt-3">
-      <p>
-        <strong>Note:</strong> Live working demos and full documentation will be linked here once projects are hosted.
-        At least one project will demonstrate PHP/MySQL database interaction.
-      </p>
+    <!-- App Screenshots -->
+    <div class="mt-3">
+      <h3 class="section-title">Application Screenshots</h3>
+      <p class="section-subtitle">Working application hosted on InfinityFree</p>
+
+      <div class="screenshot-grid">
+
+        <div class="screenshot-item">
+          <img src="images/greenmeeple/homepage.png" alt="Green Meeple Home Page" />
+          <div class="screenshot-caption">
+            Home Page
+            <p>Main dashboard displaying the full board game catalog pulled from the MySQL database.</p>
+          </div>
+        </div>
+
+        <div class="screenshot-item">
+          <img src="images/greenmeeple/addgame.png" alt="Add Game Form" />
+          <div class="screenshot-caption">
+            Add Game
+            <p>Form for adding a new board game entry with name, description, and price fields.</p>
+          </div>
+        </div>
+
+        <div class="screenshot-item">
+          <img src="images/greenmeeple/cart.png" alt="Shopping Cart" />
+          <div class="screenshot-caption">
+            Shopping Cart
+            <p>Session-based cart displaying selected games with quantity and total price.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
 
   </main>
@@ -94,5 +116,6 @@
     </p>
   </footer>
 
+<script src="lightbox.js"></script>
 </body>
 </html>
